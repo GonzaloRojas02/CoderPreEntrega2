@@ -1,5 +1,11 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 body{
@@ -88,7 +94,6 @@ header a:hover{
     text-align: center;
     flex-direction: column;
     height: 90vh;
-    color: white;
     background-image: linear-gradient(
         0deg,
         rgba(0,0,0,0.5),
@@ -100,7 +105,80 @@ header a:hover{
     background-position: center center;
 }
 
+#portada h1{
+    color: white;
+    padding-bottom: 20px;
+}
+
+#socios{
+    background-color: darkblue;
+    color: white;
+}
+
 #socios .contenedor{
     text-align: center;
     padding: 200px 12px;
+}
+
+#socios .contenedor p{
+    padding: 20px 0 20px 0;
+}
+
+.color{
+    color: #F3B229;
+}
+
+#tienda{
+    color: black;
+}
+
+#tienda h2{
+    text-align: center;
+    margin-top: 65px;
+}
+
+#tienda .contenedor{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: center;
+    max-width: 1100px;
+}
+
+.carta{
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #F3B229;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.carta:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.7);
+    transform: translateY(-3%);
+}
+
+.carta img{
+    width: 100%;
+    height: auto;
+}
+
+.carta .contenido{
+    padding: 15px;
+    text-align: center;
+}
+
+.carta .contenido p{
+    line-height: 1.5;
+    color: #4d4d4d;
+    margin-bottom: 15px;
+}
+
+.carta .contenido h3{
+    margin-bottom: 10px;
 }
