@@ -47,52 +47,84 @@ button:hover{
 /* index.html */
 /* seccion del header */
 
-header{
+a{
+    text-decoration: none;
+}
+
+ol, ul{
+    list-style: none;
+}
+
+.header{
+    height: 80px;
     background-color: darkblue;
 }
 
-header .contenedor{
+.navbar{
+    height: 100%;
     display: flex;
-    flex-direction: column;
+    width: min(1700px, 100%);
+    margin: 0 auto;
+    justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 0 2rem;
 }
 
-header .logo{
-    margin: 0;
-    padding: 15px 30px; 
-    font-weight: bold;
+.img-logo{
+    height: 70px;
+}
+
+.menu-hamburguesa{
+    display: none;
+}
+
+.menu-hamburguesa:checked + .ul-links{
+    height: calc(100vh - 80px);
+}
+
+.logo{
     color: white;
-    font-size: 1.6em;
+    font-size: 20px;
+    padding: 10px 0 0 10px;
+    font-weight: lighter;
+}
+
+.name{
     display: flex;
-    flex-direction: column;
+}
+
+.bold{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.list-icon{
+    color: white;
+    cursor: pointer;
+}
+
+.ul-links{
+    background-color: #F3B229;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    display: flex;
+    justify-content: center;
     align-items: center;
-}
-
-header p{
-    margin: 10px 0;
-}
-
-header .logo-img{
-    height: 90px;
-}
-
-header nav{
-    display: flex;
     flex-direction: column;
-    text-align: center;
-    padding-bottom: 30px;
+    gap: 3rem;
+    transition: all 0.3s;
 }
 
-header a{
-    padding: 5px 12px;
-    text-decoration: none;
-    font-weight: bold;
+.links{
+    font-size: 3.5em;
     color: white;
-}
-
-header a:hover{
-    color: #F3B229;
-    transform: scale(1.1);
+    font-weight: bold;
 }
 
 /* seccion de la portada */
@@ -250,12 +282,17 @@ header a:hover{
     padding-bottom: 15px;
 }
 
+.video-estadio{
+    width: 520px;
+    height: 300px;
+}
+
 /* footer */
 
 footer{
     background-color: #050049;
     color: white;
-    padding: 50px;
+    padding: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -275,7 +312,104 @@ footer .footer-img{
     align-items: center;
 }
 
+.redes a{
+    transition: all ease 300ms;
+}
+
+.redes a:hover{
+    transform: scale(1.2);
+    color: #F3B229;
+}
+
+.red{
+    color: white;
+}
+
 .fa-brands{
     font-size: 30px;
     margin: 15px;
+}
+
+.copy{
+    color: #5e5e5e;
+    font-size: 15px;
+}
+
+/* comienzo del responsive */
+
+@media (min-width:930px){
+    #socios .contenedor{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #socios .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #socios .socios-img{
+        background-image: url(../assets/socios.jpeg);
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 450px;
+    }
+
+    #tienda{
+        color: black;
+        margin: 80px 0 80px 0;
+    }
+    
+    #tienda h2{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    #tienda .contenedor{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    #estadio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video-estadio{
+        width: 1000px;
+        height: 1000px;
+    }
+
+    .label_hamburguesa{
+        display: none;
+    }
+
+    .ul-links{
+        margin: 0;
+        position: static;
+        width: auto;
+        height: auto;
+        flex-direction: row;
+        gap: 1rem;
+        background-color: darkblue;
+    }
+
+    .links{
+        font-size: 1.2rem;
+        transition: all 0.3s;
+        padding: 0.2rem 0.7rem;
+    }
+
+    .links:hover{
+        background-color: #F3B229;
+    }
 }
