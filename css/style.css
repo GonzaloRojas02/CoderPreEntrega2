@@ -21,22 +21,7 @@ p{ font-size: 1.25em;}
 
 /* estilizado de los botones generales */
 
-button{
-    font-size: 1.5em;
-    font-weight: bold;
-    padding: 10px 30px;
-    border-radius: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-    color: white;
-    background-color: blue;
-    transition: all 0.3s ease;
-}
 
-button:hover{
-    background-color: #F3B229;
-    transform: scale(1.05);
-}
 
 /* estilizo la clase general contenedor */
 
@@ -153,11 +138,45 @@ ol, ul{
     padding-bottom: 20px;
 }
 
+#portada button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: blue;
+    transition: all 0.3s ease;
+}
+
+#portada button:hover{
+    background-color: #F3B229;
+    transform: scale(1.05);
+}
+
 /* seccion de los socios */
 
 #socios{
     background-color: darkblue;
     color: white;
+}
+
+#socios button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: blue;
+    transition: all 0.3s ease;
+}
+
+#socios button:hover{
+    background-color: #F3B229;
+    transform: scale(1.05);
 }
 
 #socios .contenedor{
@@ -274,6 +293,23 @@ ol, ul{
     color: white;
 }
 
+#estadio button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: blue;
+    transition: all 0.3s ease;
+}
+
+#estadio button:hover{
+    background-color: #F3B229;
+    transform: scale(1.05);
+}
+
 #estadio .contenedor{
     text-align: center;
     padding: 50px 10px 50px 10px;
@@ -354,6 +390,7 @@ footer .footer-img{
     margin-bottom: 20px;
     text-align: center;
     margin-top: 45px;
+    padding: 15px;
 }
 
 .rec2 {
@@ -362,6 +399,7 @@ footer .footer-img{
     background-color: #02236D;
     margin-bottom: 20px;
     text-align: center;
+    padding: 15px;
 }
 
 .rec3 {
@@ -371,6 +409,15 @@ footer .footer-img{
     margin-bottom: 20px;
     text-align: center;
     color: black;
+    padding: 15px;
+}
+
+.rec1 h2{
+    color: #F3B229;
+}
+
+.rec2 h2{
+    color: #F3B229;
 }
 
 /* formularios */
@@ -429,7 +476,99 @@ input{
     transform: scale(1.07);
 }
 
+/* Comienzo de la bombonera */
+
+#banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:25vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../assets/la-bombonera.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#banner h2{
+    color: #F3B229;
+    text-shadow: 2px 2px 2px black, -2px 2px black, 2px 2px 2px black, -2px -2px 2px black;
+}
+
+#rectangulos2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#rectangulos2 h2{
+    font-size: 3.25em;
+}
+
+#rectangulos2 h3{
+    font-size: 2.50em;
+    margin: 0;
+}
+
+#rectangulos2 dt{
+    margin-bottom: 5px;
+    margin-top: 20px;
+    font-size: 1.50em;
+    font-weight: 300;
+}
+
+#rectangulos strong{
+    font-size: 1em;
+}
+
+.rect1 {
+    height: 930px;
+    width: 100%;
+    background-color: #FEFEFE;
+    color: #1C1E36;
+    text-align: left;
+    padding: 15px;
+}
+
+.img-bombo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.rect2 {
+    height: 890px;
+    width: 100%;
+    background-color: #27293F;
+    color: #F3B229;
+    text-align: left;
+    padding: 15px;
+}
+
+.accesos{
+    width: 100%;
+}
+
+.text-map h2{
+    background-color: white;
+    font-weight: bolder;
+    padding: 40px 0 20px 0;
+    margin: 0;
+}
+
+.mapa{
+    width: 100%;
+    height: 500px;
+}
+
 /* comienzo del responsive */
+/* index */
 
 @media (min-width:930px){
     #socios .contenedor{
@@ -505,5 +644,62 @@ input{
 
     .links:hover{
         background-color: #F3B229;
+    }
+
+/* hacete-socio */
+
+    #rectangulos{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row;
+        margin-top: 40px;
+    }
+
+    .rec1{
+        margin-top: 0;
+    }
+
+    #formularios{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    /* la bombonera */
+
+    #rectangulos2{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .rect1 {
+        height: 1010px;
+        width: 800px;
+        background-color: #FEFEFE;
+        color: #1C1E36;
+        text-align: left;
+        padding: 15px;
+    }
+
+    .rect2 {
+        height: 1010px;
+        width: 800px;
+        background-color: #27293F;
+        color: #F3B229;
+        text-align: left;
+        padding: 15px;
+    }
+
+    .text-map{
+        text-align: center;
+    }
+
+    .mapa{
+        height: 600px;
+        width: 1000px;
     }
 }
