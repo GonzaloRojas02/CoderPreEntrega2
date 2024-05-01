@@ -11,6 +11,7 @@ html{
 body{
     font-family: 'Roboto', sans-serif;
     margin: 0;
+    background-color: #E5E5E5;
 }
 
 h1{ font-size: 3.5em;}
@@ -335,6 +336,99 @@ footer .footer-img{
     font-size: 15px;
 }
 
+/* hacete-socio.html */
+/* info socios */
+
+#rectangulos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.rec1 {
+    height: 300px;
+    width: 400px;
+    background-color: #02236D;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 45px;
+}
+
+.rec2 {
+    height: 300px;
+    width: 400px;
+    background-color: #02236D;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.rec3 {
+    height: 300px;
+    width: 400px;
+    background-color: #F3B229;
+    margin-bottom: 20px;
+    text-align: center;
+    color: black;
+}
+
+/* formularios */
+
+#formularios{
+    background-color: #E5E5E5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#formularios form{
+    background-color: #02236D;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    width: 420px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    border-radius: 10px;
+    margin: 25px;
+}
+
+form h2{
+    font-size: 30px;
+    color: white;
+    margin-bottom: 35px;
+}
+
+input{
+    padding: 17px;
+    border-radius: 25px;
+    background-color: transparent;
+    border: 3px solid #F3B229;
+    margin-bottom: 30px;
+    outline: none;
+    color: white;
+    font-size: 16px;
+}
+
+::placeholder{
+    color: #7c7c7c;
+}
+
+.btn{
+    background-color: #F3B229;
+    border: 2px solid #F3B229;
+    cursor: pointer;
+    transition: all 200ms;
+}
+
+.btn:hover{
+    background-color: #ffcd62;
+    border: 2px solid #ffcd62;
+    transform: scale(1.07);
+}
+
 /* comienzo del responsive */
 
 @media (min-width:930px){
@@ -353,7 +447,7 @@ footer .footer-img{
     }
 
     #socios .socios-img{
-        background-image: url(../assets/socios.jpeg);
+    background-image: url(../assets/socios.jpeg);
     background-size: cover;
     background-position: center center;
     height: 500px;
