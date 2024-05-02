@@ -112,6 +112,7 @@ ul {
   flex-direction: column;
   gap: 3rem;
   transition: all 0.3s;
+  z-index: 1000;
 }
 
 .links {
