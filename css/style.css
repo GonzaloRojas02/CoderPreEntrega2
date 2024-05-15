@@ -1,205 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: "Montserrat", sans-serif;
-  background-color: #e5e5e5;
-}
-
-h1 {
-  font-size: 3.5em;
-}
-
-h2 {
-  font-size: 2.7em;
-}
-
-h3 {
-  font-size: 2em;
-}
-
-p {
-  font-size: 1.25em;
-}
-
-/* NavBar */
-.navbar-dark .navbar-toggler-icon {
-  background-image: url(../assets/menu.png);
-}
-
-.navbar {
-  background-color: darkblue;
-}
-
-.nav-item {
-  transition: all 0.5s;
-}
-
-.nav-item:hover {
-  background-color: #f3b229;
-  border-radius: 15px;
-}
-
-/* index.html */
-/* seccion de la portada */
-.portada {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  flex-direction: column;
-  height: 90vh;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/estadio.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-
-.portada h1 {
-  color: white;
-  padding-bottom: 20px;
-}
-
-.portada button {
-  font-size: 1.5em;
-  font-weight: bold;
-  padding: 10px 30px;
-  border-radius: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.5);
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-  color: white;
-  background-color: blue;
-  transition: all 0.3s ease;
-}
-
-.portada button:hover {
-  background-color: #f3b229;
-  transform: scale(1.05);
-  letter-spacing: 1.5px;
-}
-
-/* seccion de los socios */
-.socios {
-  background-color: darkblue;
-  color: white;
-}
-.socios .contenedor {
-  text-align: center;
-  padding: 200px 12px;
-}
-.socios .contenedor p {
-  padding: 20px 0;
-}
-
-.socios button {
-  font-size: 1.5em;
-  font-weight: bold;
-  padding: 10px 30px;
-  border-radius: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.5);
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-  color: white;
-  background-color: blue;
-  transition: all 0.3s ease;
-}
-
-.socios button:hover {
-  background-color: #f3b229;
-  transform: scale(1.05);
-  letter-spacing: 1.5px;
-}
-
-.color {
-  color: #f3b229;
-}
-
-/* seccion de la tienda */
-.precio {
-  color: #000;
-  font-size: 30px;
-  font-weight: bold;
-}
-
-.card {
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
-  cursor: default;
-  transition: all 400ms ease;
-}
-.card:hover {
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.7);
-  transform: translateY(-2%);
-}
-
-.boton-tienda {
-  padding: 17px 40px;
-  border-radius: 50px;
-  cursor: pointer;
-  border: 0;
-  background-color: #2655b9;
-  color: white;
-  box-shadow: rgba(0, 0, 0, 0.05) 0 0 8px;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  font-size: 15px;
-  transition: all 0.5s ease;
-}
-.boton-tienda:hover {
-  letter-spacing: 3px;
-  background-color: #02236d;
-  color: hsl(0, 0%, 100%);
-  box-shadow: rgb(2, 35, 109) 0px 7px 29px 0px;
-}
-.boton-tienda:active {
-  letter-spacing: 3px;
-  background-color: #02236d;
-  color: hsl(0, 0%, 100%);
-  box-shadow: rgb(2, 35, 109) 0px 0px 0px 0px;
-  transform: translateY(5px);
-  transition: 100ms;
-}
-
-/* seccion estadio */
-.estadio {
-  background-color: darkblue;
-  color: white;
-}
-.estadio button {
-  font-size: 1.5em;
-  font-weight: bold;
-  padding: 10px 30px;
-  border-radius: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.5);
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-  color: white;
-  background-color: blue;
-  transition: all 0.3s ease;
-}
-.estadio button:hover {
-  background-color: #f3b229;
-  transform: scale(1.05);
-}
-.estadio .contenedor {
-  text-align: center;
-  padding: 50px 10px;
-}
-.estadio .contenedor h2 {
-  padding-bottom: 15px;
-}
-
-.video-estadio {
-  width: 520px;
-  height: 300px;
-}
-
-/* footer */
 footer {
   background-color: #02236d;
   color: white;
@@ -242,7 +41,6 @@ footer .footer-img {
   font-size: 15px;
 }
 
-/* hacete-socio.html */
 /* info socios */
 .rectangulos {
   display: flex;
@@ -324,6 +122,9 @@ input {
   color: white;
   font-size: 16px;
 }
+input::-moz-placeholder {
+  color: #7c7c7c;
+}
 input::placeholder {
   color: #7c7c7c;
 }
@@ -340,7 +141,6 @@ input::placeholder {
   transform: scale(1.07);
 }
 
-/* Comienzo de la bombonera */
 .banner {
   display: flex;
   justify-content: center;
@@ -427,7 +227,6 @@ input::placeholder {
   height: 500px;
 }
 
-/* historia.hmtl */
 .jugador-roman {
   position: relative;
   margin: 80px 10px 10px 10px;
@@ -692,6 +491,206 @@ input::placeholder {
   opacity: 0;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #e5e5e5;
+}
+
+h1 {
+  font-size: 3.5em;
+}
+
+h2 {
+  font-size: 2.7em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.25em;
+}
+
+/* NavBar */
+.navbar-dark .navbar-toggler-icon {
+  background-image: url(../assets/menu.png);
+}
+
+.navbar {
+  background-color: darkblue;
+}
+
+.nav-item {
+  transition: all 0.5s;
+}
+
+.nav-item:hover {
+  background-color: #f3b229;
+  border-radius: 15px;
+}
+
+/* index.html */
+/* seccion de la portada */
+.portada {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 90vh;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/estadio.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.portada h1 {
+  color: white;
+  padding-bottom: 20px;
+}
+
+.portada button {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  color: white;
+  background-color: blue;
+  transition: all 0.3s ease;
+}
+
+.portada button:hover {
+  background-color: #f3b229;
+  transform: scale(1.05);
+  letter-spacing: 1.5px;
+}
+
+/* seccion de los socios */
+.socios {
+  background-color: darkblue;
+  color: white;
+}
+.socios .contenedor {
+  text-align: center;
+  padding: 200px 12px;
+}
+.socios .contenedor p {
+  padding: 20px 0;
+}
+
+.socios button {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  color: white;
+  background-color: blue;
+  transition: all 0.3s ease;
+}
+
+.socios button:hover {
+  background-color: #f3b229;
+  transform: scale(1.05);
+  letter-spacing: 1.5px;
+}
+
+.color {
+  color: #f3b229;
+}
+
+/* seccion de la tienda */
+.precio {
+  color: #000;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.card {
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+  cursor: default;
+  transition: all 400ms ease;
+}
+.card:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.7);
+  transform: translateY(-2%);
+}
+
+.boton-tienda {
+  padding: 17px 40px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 0;
+  background-color: #2655b9;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.05) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all 0.5s ease;
+}
+.boton-tienda:hover {
+  letter-spacing: 3px;
+  background-color: #02236d;
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(2, 35, 109) 0px 7px 29px 0px;
+}
+.boton-tienda:active {
+  letter-spacing: 3px;
+  background-color: #02236d;
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(2, 35, 109) 0px 0px 0px 0px;
+  transform: translateY(5px);
+  transition: 100ms;
+}
+
+/* seccion estadio */
+.estadio {
+  background-color: darkblue;
+  color: white;
+}
+.estadio button {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  color: white;
+  background-color: blue;
+  transition: all 0.3s ease;
+}
+.estadio button:hover {
+  background-color: #f3b229;
+  transform: scale(1.05);
+}
+.estadio .contenedor {
+  text-align: center;
+  padding: 50px 10px;
+}
+.estadio .contenedor h2 {
+  padding-bottom: 15px;
+}
+
+.video-estadio {
+  width: 520px;
+  height: 300px;
+}
+
 /* comienzo del responsive */
 /* index */
 @media (min-width: 992px) {
@@ -789,6 +788,4 @@ input::placeholder {
     height: 600px;
     width: 1000px;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
